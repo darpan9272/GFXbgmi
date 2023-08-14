@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/donateLayout"
+        android:layout_below="@+id/select_game" />
+
+    <LinearLayout
+        android:id="@+id/select_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/gameversion"
+                android:textColor="@color/color_text_main"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/google_play"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="GLOBAL"
+                        android:textColor="@color/color_text" />
+
+                    <RadioButton
+                        android:id="@+id/kr"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="KOREA"
+                        android:textColor="@color/color_text" />
+
+                    <RadioButton
+                        android:id="@+id/lite"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="LITE"
+                        android:textColor="@color/color_text" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/india"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="BGMI (INDIA)"
+                        android:textColor="@color/color_text" />
+
+                    <RadioButton
+                        android:id="@+id/tw"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="TAIWAN"
+                        android:textColor="@color/color_text" />
+
+                    <RadioButton
+                        android:id="@+id/global_beta"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="GLOBAL (BETA)"
+                        android:textColor="@color/color_text" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/china"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="CHINA"
+                        android:textColor="@color/color_text" />
+
+                    <RadioButton
+                        android:id="@+id/vn"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="VIETNAM"
+                        android:textColor="@color/color_text" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/donateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/acceptLayout"
+        android:background="@color/color_background"
+        android:gravity="top|center_vertical|center_horizontal|center"
+        android:orientation="vertical"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/tv_donate"
+            android:textColor="@color/color_text" />
+
+
+
+        <TextView
+            android:id="@+id/tv_donate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="$20 - Free UC"
+            android:textColor="@color/color_text_main"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_earn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Earn"
+            android:textColor="@color/color_on_primary"
+            app:rippleColor="@color/color_ripple" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/acceptLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:paddingStart="12dp">
+
+            <ImageView
+                android:id="@+id/insta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/telegram" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/accept"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:text="@string/accept"
+                android:textColor="@color/color_on_primary"
+                app:rippleColor="@color/color_ripple" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:paddingEnd="12dp">
+
+            <ImageView
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/rate" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

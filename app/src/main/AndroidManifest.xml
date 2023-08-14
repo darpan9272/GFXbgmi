@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="34"
+        tools:ignore="GradleOverrides" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <uses-permission android:name="android.permission.Ad_ID" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <queries>
+        <package android:name="com.tencent.ig" />
+        <package android:name="com.pubg.imobile" />
+        <package android:name="com.tencent.tmgp.pubgmhd" />
+        <package android:name="com.pubg.krmobile" />
+        <package android:name="com.vng.pubgmobile" />
+        <package android:name="com.rekoo.pubgm" />
+        <package android:name="com.tencent.igce" />
+        <package android:name="com.tencent.iglite" />
+        <package android:name="com.google.android.apps.playconsole" />
+        <package android:name="inc.trilokia.pubgfxtool" />
+        <package android:name="com.pub.gfxtool" />
+
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GFXbgmi"
+        tools:targetApi="31">
+        <activity
+            android:name="com.PubgBgmi.gfxbgmi.items"
+            android:exported="false" />
+        <activity
+            android:name="com.PubgBgmi.gfxbgmi.splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".earnsection"
+            android:exported="false" />
+        <activity
+            android:name="com.PubgBgmi.gfxbgmi.privacypolicy"
+            android:exported="false" />
+        <activity
+            android:name="com.PubgBgmi.gfxbgmi.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.startapp.sdk.APPLICATION_ID"
+            android:value="207878004" />
+    </application>
+
+</manifest>

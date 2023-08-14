@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "965481966829",
+    "firebase_url": "https://bgmisensi-default-rtdb.firebaseio.com",
+    "project_id": "bgmisensi",
+    "storage_bucket": "bgmisensi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965481966829:android:735e2a64b079d1124730e4",
+        "android_client_info": {
+          "package_name": "com.PubgBgmi.gfxbgmi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965481966829-66uh599lgpteicsianpuie8urma43mo2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdDmQ_j_hBGKHvIoCXcr45WRag8FecVTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965481966829-66uh599lgpteicsianpuie8urma43mo2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965481966829:android:402ceb0bbf8986f24730e4",
+        "android_client_info": {
+          "package_name": "com.hanumanji.bgmisensi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965481966829-66uh599lgpteicsianpuie8urma43mo2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdDmQ_j_hBGKHvIoCXcr45WRag8FecVTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965481966829-66uh599lgpteicsianpuie8urma43mo2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
